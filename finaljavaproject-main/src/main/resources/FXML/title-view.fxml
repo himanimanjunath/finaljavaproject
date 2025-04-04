@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxprojectcsa.Controllers.TitleViewController">
+   <VBox alignment="CENTER" layoutX="79.0" layoutY="16.0" prefHeight="368.0" prefWidth="554.0" spacing="10.0">
+      <VBox alignment="CENTER" prefHeight="138.0" prefWidth="554.0">
+         <Label text="JBA 2K24" textFill="#801111">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="65.0" />
+            </font>
+         </Label>
+         <Label text="Java Basketball Association">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </VBox>
+      <Button fx:id="startBtn" mnemonicParsing="false" onAction="#onStartBtnClick" prefHeight="62.0" prefWidth="143.0" text="START">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </VBox>
+</AnchorPane>

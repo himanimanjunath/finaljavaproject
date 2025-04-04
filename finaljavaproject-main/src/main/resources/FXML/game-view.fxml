@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="borderPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxprojectcsa.Controllers.GameViewController">
+      <ImageView fx:id="personImage" fitHeight="240.0" fitWidth="110.0" layoutX="32.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hoopImage" fitHeight="140.0" fitWidth="130.0" layoutX="432.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets right="120.0" top="50.0" />
+         </BorderPane.margin></ImageView>
+      <HBox prefHeight="20.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <HBox alignment="BOTTOM_LEFT" prefHeight="43.0" prefWidth="693.0" spacing="10.0">
+            <Label text="Java Basketball Association" textFill="#801111">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="shotsMadeLabel" prefHeight="23.0" prefWidth="145.0" text="Shots Made: 0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="continueBtn" mnemonicParsing="false" onAction="#onContinueBtnPress" prefHeight="26.0" prefWidth="72.0" text="Continue" visible="false" />
+         <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#onExitBtnClick" text="Exit" />
+         </HBox>
+      </HBox>
+      <HBox layoutX="-6.0" layoutY="372.0" prefHeight="29.0" prefWidth="633.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <Label text="Enter desired angle from 1-90:">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+            <padding>
+               <Insets left="10.0" top="5.0" />
+            </padding>
+         </Label>
+         <TextField fx:id="angleText">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+         <Button fx:id="angleBtn" mnemonicParsing="false" onAction="#onAngleBtnClick" text="Enter">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+         </Button>
+         <Label fx:id="errorLabel">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="2.0" top="5.0" />
+            </HBox.margin>
+         </Label>
+         <Button fx:id="shootBtn" mnemonicParsing="false" onAction="#onShootBtnClick" text="SHOOT!" visible="false">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+         </Button>
+         <Label fx:id="shotResultLabel">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="-200.0" top="5.0" />
+            </HBox.margin>
+            <padding>
+               <Insets right="50.0" />
+            </padding>
+         </Label>
+      </HBox>
+      <ImageView fx:id="ballImage" fitHeight="70.0" fitWidth="70.0" layoutX="72.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+   <QuadCurve fx:id="quadCurve" controlX="-50.0" controlY="-100.0" endX="50.0" fill="#1f93ff00" startX="-50.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+</Pane>
